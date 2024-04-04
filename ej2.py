@@ -2,7 +2,7 @@ from flask import Flask
 app = Flask(__name__)
 @app.route('/')
 def hello_world():
-    return '<center><h1>5to B Infiormatica</h1></center>'
+    return '<center><h1>¿Que operacion quieres hacer?</h1></center><br>(/muntiplicacion) para multiplicar<br>(/suma) para sumar<br>(/resta)para restar<br>(?division) para dividir'
 
 @app.route('/suma/<int:num1>,<int:num2>')
 @app.route('/suma/<int:num1>,<int:num2>,<int:num3>')
